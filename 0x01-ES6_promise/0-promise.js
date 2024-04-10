@@ -1,4 +1,7 @@
-/* esling-disabled */
+/* eslint-disabled */
 export default function getResponseFromAPI() {
-	return new Promise((resolve, reject) => {});
+  const thePromise = new Promise((resolve) => {
+    resolve('foo');
+  });
+  return (thePromise);
 }
