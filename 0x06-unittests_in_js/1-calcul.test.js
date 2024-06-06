@@ -44,4 +44,7 @@ describe('#calculateNumber() with type DIVIDE', () => {
     it('div 75 and 3', () => {
         assert.equal(calculateNumber('DIVIDE', 75, 3), 25);
     });
+    it('div 1.4 and 0'), () => {
+        assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error')
+    }
 });
