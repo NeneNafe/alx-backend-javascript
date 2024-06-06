@@ -1,7 +1,7 @@
 const calculateNumber = require('./1-calcul.js');
 const assert = require('assert');
 
-describe('calculateNumber', () => {
+describe('#calculateNumber() with type SUM', () => {
     it('add 3 and 5', () => {
         assert.equal(calculateNumber('SUM', 3, 5), 8);
     });
@@ -16,7 +16,7 @@ describe('calculateNumber', () => {
     });
 });
 
-describe('calculateNumber', () => {
+describe('#calculateNumber() with type SUBTRACT', () => {
     it('sub 3 and 5', () => {
         assert.equal(calculateNumber('SUBTRACT', 3, 5), -2);
     });
@@ -31,7 +31,7 @@ describe('calculateNumber', () => {
     });
 });
 
-describe('calculateNumber', () => {
+describe('#calculateNumber() with type DIVIDE', () => {
     it('div 15 and 5', () => {
         assert.equal(calculateNumber('DIVIDE', 15, 5), 3);
     });
