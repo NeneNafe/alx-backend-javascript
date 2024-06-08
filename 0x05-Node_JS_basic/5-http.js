@@ -11,7 +11,7 @@ function countStudents(fileName) {
   return new Promise((resolve, reject) => {
     readFile(fileName, (error, data) => {
       if (error) {
-        reject(error());
+        reject(error);
       } else {
         let output = '';
         const lines = data.toString().split('\n');
