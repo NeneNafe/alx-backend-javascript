@@ -32,11 +32,11 @@ function countStudents(fileName) {
           }
         }
         const n = length - 1;
-        output += `Number of students: ${n}`;
+        output += `Number of students: ${n}\n`;
         for (const [key, value] of Object.entries(fields)) {
           if (key !== 'field') {
             output += `Number of students in ${key}: ${value}. `;
-            output += `List: ${students[key].join(', ')}`;
+            output += `List: ${students[key].join(', ')}\n`;
           }
         }
         resolve(output);
